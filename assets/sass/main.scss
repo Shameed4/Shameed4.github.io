@@ -418,12 +418,7 @@
 	article:last-child {
 		margin-bottom: 0;
 	}
-
-/* Image */
-
-	.image {
-		display: inline-block;
-		position: relative;
+on: relative;
 
 		img {
 			display: block;
@@ -433,7 +428,12 @@
 		&.fit {
 			display: block;
 			width: 100%;
-		}
+		
+/* Image */
+
+	.image {
+		display: inline-block;
+		positi}
 
 		&.featured {
 			display: block;
