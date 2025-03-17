@@ -166,13 +166,16 @@
 					</header>
 					<div class="row">
 						<div class="col-12">
-							<form method="post" action="#">
+							<!-- 
+    FormSpree configuration for contact form
+-->
+<form id="contactForm" action="https://formspree.io/f/movevljo" method="POST">
 								<div class="row">
 									<div class="col-6 col-12-small">
 										<input type="text" name="name" id="name" placeholder="Name" />
 									</div>
 									<div class="col-6 col-12-small">
-										<input type="text" name="email" id="email" placeholder="Email" />
+										<input type="email" name="_replyto" id="email" placeholder="Email" />
 									</div>
 									<div class="col-12">
 										<input type="text" name="subject" id="subject" placeholder="Subject" />
@@ -180,6 +183,10 @@
 									<div class="col-12">
 										<textarea name="message" id="message" placeholder="Message"></textarea>
 									</div>
+									<!-- Hidden fields for FormSpree configuration -->
+									<input type="hidden" name="_subject" value="New message from your website">
+									<input type="hidden" name="_next" value="https://shameed4.github.io/#thankyou">
+									<input type="hidden" name="_format" value="plain">
 									<div class="col-12">
 										<ul class="actions">
 											<li><input type="submit" value="Send Message" /></li>
@@ -216,6 +223,12 @@
 							<hr />
 						</div>
 					</div>
+					<div id="thankyou" style="display: none; text-align: center; padding: 2em; margin: 2em 0; background-color: #f0f8ff; border-radius: 10px; border: 1px solid #d0e0f0;">
+						<div class="thankyou-message">
+							<h3 style="color: #2c7adf;">Thank you for your message!</h3>
+							<p>I'll get back to you as soon as possible.</p>
+						</div>
+					</div>
 					<footer>
 						<ul id="copyright">
 							<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
@@ -231,6 +244,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+		<script src="assets/js/contact.js"></script>
 
 	</body>
 </html>
