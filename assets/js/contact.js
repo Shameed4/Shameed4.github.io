@@ -74,6 +74,45 @@
             var originalBtnValue = submitBtn.val();
             submitBtn.val('Sending...').attr('disabled', 'disabled');
             
+            // LOCAL TESTING MODE
+            // Check if we're testing locally (action is "#")
+            if (form.attr('action') === '#') {
+                console.log('LOCAL TEST MODE - Would submit:', {
+                    name: name,
+                    email: email,
+                    subject: subject,
+                    message: message
+                });
+                
+                // Simulate a server response delay
+                setTimeout(function() {
+                    // Show the thank you message
+                    form.hide();
+                    $('#thankyou').show();
+                    
+                    // Scroll to the thank you message
+                    $('html, body').animate({
+                        scrollTop: $('#thankyou').offset().top - 100
+                    }, 1000);
+                    
+                    // Reset button state
+                    submitBtn.val(originalBtnValue).removeAttr('disabled');
+                    
+                    // Reset form
+                    form[0].reset();
+                    
+                    // Show the form again after 5 seconds
+                    setTimeout(function() {
+                        $('#thankyou').fadeOut(500, function() {
+                            form.fadeIn(500);
+                        });
+                    }, 5000);
+                }, 1500);
+                
+                return;
+            }
+            
+            // PRODUCTION MODE
             // Submit the form traditionally for FormSpree to handle
             form[0].submit();
         });
