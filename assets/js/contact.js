@@ -26,6 +26,14 @@
         // Get the contact form
         var form = $('#contactForm');
         
+        // Detect if we're running locally (file://) or on a server (http:// or https://)
+        var isLocalTesting = window.location.protocol === 'file:';
+        
+        // If testing locally, prevent FormSpree submission
+        if (isLocalTesting) {
+            console.log('LOCAL TESTING MODE DETECTED: Form submissions will be simulated');
+        }
+        
         // Add submit event listener
         form.on('submit', function(e) {
             e.preventDefault(); // Prevent default form submission
@@ -75,8 +83,8 @@
             submitBtn.val('Sending...').attr('disabled', 'disabled');
             
             // LOCAL TESTING MODE
-            // Check if we're testing locally (action is "#")
-            if (form.attr('action') === '#') {
+            // If we're testing locally, simulate a submission
+            if (isLocalTesting) {
                 console.log('LOCAL TEST MODE - Would submit:', {
                     name: name,
                     email: email,
