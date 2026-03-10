@@ -1,295 +1,482 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <!--
 	Miniport by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
+  <head>
+    <title>Sean Erfan</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
 
-<head>
-	<title>Sean Erfan</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link rel="stylesheet" href="assets/css/main.css" />
-</head>
+  <body class="is-preload">
+    <!-- Nav -->
+    <nav id="nav">
+      <ul class="container">
+        <li><a href="#top">Top</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
 
-<body class="is-preload">
+    <!-- Home -->
+    <article id="top" class="wrapper style1">
+      <div class="container">
+        <div class="row">
+          <div class="col-4 col-5-large col-12-medium">
+            <span class="image fit"
+              ><img src="images/sean.jpg" alt="Sean Erfan"
+            /></span>
+          </div>
+          <div class="col-8 col-7-large col-12-medium">
+            <header>
+              <h1>
+                Hi. I'm
+                <strong
+                  ><u
+                    ><a href="/SeanErfanResume.pdf" target="_blank"
+                      >Sean Erfan</a
+                    ></u
+                  ></strong
+                >.
+              </h1>
+            </header>
+            <p>
+              I am working as a Software Developer at Lotus MD. Previously, I
+              was a Full Stack Software Engineer at North Atlantic Industries. I
+              recently graduated from Stony Brook University with a double major
+              in Computer Science and Applied Mathematics & Statistics. I
+              co-founded the
+              <a
+                href="https://ai-community-sbu.github.io/AI-SBU/pages/EBoard"
+                target="_blank"
+                >Artificial Intelligence Community</a
+              >
+              and served as President for 2 years. I won prizes in 4 hackathons,
+              most recently my company's internal hackathon and HackHarvard
+              2024. Some of my previous involvements included being the
+              Secretary of the
+              <a href="https://sbcs.io" target="_blank"
+                >Stony Brook Computing Society</a
+              >.
+            </p>
+            <a href="#work" class="button large scrolly"
+              >Learn about what I do</a
+            >
+          </div>
+        </div>
+      </div>
+    </article>
 
-	<!-- Nav -->
-	<nav id="nav">
-		<ul class="container">
-			<li><a href="#top">Top</a></li>
-			<li><a href="#work">Work</a></li>
-			<li><a href="#portfolio">Portfolio</a></li>
-			<li><a href="#contact">Contact</a></li>
-		</ul>
-	</nav>
+    <!-- Work -->
+    <article id="work" class="wrapper style2">
+      <div class="container">
+        <header>
+          <h2>Here's some of the stuff I have done.</h2>
+        </header>
+        <!-- Lotus MD -->
+        <div class="row aln-center">
+          <div class="col-4 col-6-medium col-12-small">
+            <section class="box style1">
+              <span class="icon solid featured fa-stethoscope"></span>
+              <h3>Software Developer @ Lotus MD</h3>
+              <p>
+                I recently joined Lotus MD as a Software Developer, bringing my
+                full-stack and cloud experience to the healthcare space.
+              </p>
+            </section>
+          </div>
+        </div>
 
-	<!-- Home -->
-	<article id="top" class="wrapper style1">
-		<div class="container">
-			<div class="row">
-				<div class="col-4 col-5-large col-12-medium">
-					<span class="image fit"><img src="images/sean.jpg" alt="Sean Erfan" /></span>
-				</div>
-				<div class="col-8 col-7-large col-12-medium">
-					<header>
-						<h1>Hi. I'm <strong><u><a href="/SeanErfanResume.pdf" target="_blank">Sean
-										Erfan</a></u></strong>.</h1>
-					</header>
-					<p>I am working as a Software Developer at Lotus MD.
-						Previously, I was a Full Stack Software Engineer at North Atlantic Industries.
-						I recently graduated from Stony Brook University with a double major in Computer Science and
-						Applied Mathematics & Statistics.
-						I co-founded the <a href="https://ai-community-sbu.github.io/AI-SBU/pages/EBoard"
-							target="_blank">Artificial Intelligence Community</a> and served as President for 2 years.
-						I won prizes in 4 hackathons, most recently my company's internal hackathon and HackHarvard
-						2024.
-						Some of my previous involvements included being the Secretary of the <a href="https://sbcs.io"
-							target="_blank">Stony Brook Computing Society</a>.</p>
-					<a href="#work" class="button large scrolly">Learn about what I do</a>
-				</div>
-			</div>
-		</div>
-	</article>
+        <!-- NAI - full row -->
+        <div class="row aln-center" style="margin-top: 1em">
+          <div class="col-12">
+            <h3 style="text-align: center; margin-bottom: 0.5em">
+              Software Engineer @ North Atlantic Industries
+            </h3>
+          </div>
+          <div class="col-4 col-6-medium col-12-small">
+            <section class="box style1">
+              <span class="icon solid featured fa-warehouse"></span>
+              <h3>Wave Picking App</h3>
+              <p>
+                A native Android app (Java, MVVM, Zebra DataWedge) used daily by
+                warehouse workers to fulfill 20+ production orders
+                simultaneously. Features an offline-first sync architecture with
+                a local queue to cache failed requests and reconcile inventory
+                on reconnection — zero data loss during network instability.
+                Backed by an ASP.NET Core/SQL Server API using Serializable
+                transaction isolation to eliminate race conditions and automatic
+                session forking to preserve user progress during concurrent
+                picks.
+              </p>
+            </section>
+          </div>
+          <div class="col-4 col-6-medium col-12-small">
+            <section class="box style1">
+              <span class="icon solid featured fa-trophy"></span>
+              <h3>Kit Management Dashboard</h3>
+              <p>
+                A full-stack Angular/ASP.NET production planning dashboard that
+                won honorable mention at the company hackathon and was extended
+                to production, saving 6 hours weekly across the operations team.
+                Backed by a complex SQL view aggregating real-time BOM
+                shortages, purchase orders, and batch schedules to calculate
+                build feasibility across thousands of components.
+              </p>
+            </section>
+          </div>
+          <div class="col-4 col-6-medium col-12-small">
+            <section class="box style1">
+              <span class="icon solid featured fa-cloud"></span>
+              <h3>AI, ETL & Cloud Systems</h3>
+              <p>
+                Built an AI-powered DVT generation service (Python FastAPI +
+                Gemini Pro) that ingests PDF specs and produces formatted DOCX
+                reports, deployed on AWS ECS/Fargate with CI/CD via Jenkins.
+                Orchestrated a fault-tolerant ETL pipeline syncing RoHS/REACH
+                compliance data for 15,000+ components. Designed a certification
+                management system for 75 employees using AWS S3 pre-signed URLs
+                with automated email reminders, and provisioned ephemeral dev
+                environments via Terraform and CloudFront.
+              </p>
+            </section>
+          </div>
+        </div>
 
-	<!-- Work -->
-	<article id="work" class="wrapper style2">
-		<div class="container">
-			<header>
-				<h2>Here's some of the stuff I have done.</h2>
-			</header>
-			<!-- Lotus MD -->
-			<div class="row aln-center">
-				<div class="col-4 col-6-medium col-12-small">
-					<section class="box style1">
-						<span class="icon solid featured fa-stethoscope"></span>
-						<h3>Software Developer @ Lotus MD</h3>
-						<p>I recently joined Lotus MD as a Software Developer, bringing my full-stack and cloud experience to the healthcare space.</p>
-					</section>
-				</div>
-			</div>
+        <!-- SBU - full row -->
+        <div class="row aln-center" style="margin-top: 1em">
+          <div class="col-12">
+            <h3 style="text-align: center; margin-bottom: 0.5em">
+              Student at Stony Brook University
+            </h3>
+          </div>
+          <div class="col-4 col-6-medium col-12-small">
+            <section class="box style1">
+              <span class="icon solid featured fa-graduation-cap"></span>
+              <h3>Academics</h3>
+              <p>
+                Graduated with a double major in Computer Science and Applied
+                Mathematics & Statistics in 3 years with a GPA of 3.96. Member
+                of the University Scholars honors program.
+              </p>
+            </section>
+          </div>
+          <div class="col-4 col-6-medium col-12-small">
+            <section class="box style1">
+              <span class="icon solid featured fa-robot"></span>
+              <h3>Co-Founder, AI Community @ SBU</h3>
+              <p>
+                Co-founded Stony Brook's AI club, serving as VP for 1 year and
+                President for 2. Led an e-board of 10, hosted ML workshops and
+                competitions, organized guest speaker events, and grew the club
+                to official
+                <a
+                  href="https://www.stonybrook.edu/commcms/ceas-undergrad/student_organization/ai_community"
+                  target="_blank"
+                  >CEAS recognition</a
+                >
+                with a datathon of 50+ competitors.
+              </p>
+            </section>
+          </div>
+          <div class="col-4 col-6-medium col-12-small">
+            <section class="box style1">
+              <span class="icon solid featured fa-trophy"></span>
+              <h3>Hackathons & Research</h3>
+              <p>
+                Won prizes at four hackathons: Hopperhacks 2024 (AI Track),
+                SBUHacks 2024 (Best MongoDB Atlas), HackHarvard 2024 (AllHealth
+                Track), and NAI Company Hackathon (Honorable Mention). Also
+                served as a Data Structures TA and NLP research assistant,
+                studying contradiction detection and sentiment analysis on
+                Russia-Ukraine war coverage.
+              </p>
+            </section>
+          </div>
+        </div>
+        <footer>
+          <!-- <p>Lorem ipsum dolor sit sapien vestibulum ipsum primis?</p> -->
+          <a href="#portfolio" class="button large scrolly"
+            >See some of my projects!</a
+          >
+        </footer>
+      </div>
+    </article>
 
-			<!-- NAI - full row -->
-			<div class="row aln-center" style="margin-top: 1em;">
-				<div class="col-12">
-					<h3 style="text-align:center; margin-bottom: 0.5em;">Software Engineer @ North Atlantic Industries</h3>
-				</div>
-				<div class="col-4 col-6-medium col-12-small">
-					<section class="box style1">
-						<span class="icon solid featured fa-warehouse"></span>
-						<h3>Wave Picking App</h3>
-						<p>A native Android app (Java, MVVM, Zebra DataWedge) used daily by warehouse workers to fulfill
-							20+ production orders simultaneously. Features an offline-first sync architecture with a local
-							queue to cache failed requests and reconcile inventory on reconnection — zero data loss during
-							network instability. Backed by an ASP.NET Core/SQL Server API using Serializable transaction
-							isolation to eliminate race conditions and automatic session forking to preserve user progress
-							during concurrent picks.</p>
-					</section>
-				</div>
-				<div class="col-4 col-6-medium col-12-small">
-					<section class="box style1">
-						<span class="icon solid featured fa-trophy"></span>
-						<h3>Kit Management Dashboard</h3>
-						<p>A full-stack Angular/ASP.NET production planning dashboard that won honorable mention at the
-							company hackathon and was extended to production, saving 6 hours weekly across the operations
-							team. Backed by a complex SQL view aggregating real-time BOM shortages, purchase orders, and
-							batch schedules to calculate build feasibility across thousands of components.</p>
-					</section>
-				</div>
-				<div class="col-4 col-6-medium col-12-small">
-					<section class="box style1">
-						<span class="icon solid featured fa-cloud"></span>
-						<h3>AI, ETL & Cloud Systems</h3>
-						<p>Built an AI-powered DVT generation service (Python FastAPI + Gemini Pro) that ingests PDF
-							specs and produces formatted DOCX reports, deployed on AWS ECS/Fargate with CI/CD via Jenkins.
-							Orchestrated a fault-tolerant ETL pipeline syncing RoHS/REACH compliance data for 15,000+
-							components. Designed a certification management system for 75 employees using AWS S3
-							pre-signed URLs with automated email reminders, and provisioned ephemeral dev environments
-							via Terraform and CloudFront.</p>
-					</section>
-				</div>
-			</div>
+    <!-- Portfolio -->
+    <article id="portfolio" class="wrapper style3">
+      <div class="container">
+        <header>
+          <h2>
+            Here's some stuff I made recently. Click the pictures to see more!
+          </h2>
+          <!-- <p>Proin odio consequat  sapien vestibulum consequat lorem dolore feugiat.</p> -->
+        </header>
+        <div class="row">
+          <div class="col-4 col-6-medium col-12-small">
+            <article class="box style2">
+              <a
+                href="https://www.nexussbu.com/"
+                target="_blank"
+                class="image featured"
+                ><img src="images/nexus.PNG" alt="Sean Erfan Nexus Research"
+              /></a>
+              <h3>
+                <a href="https://www.nexussbu.com/" target="_blank">Nexus</a>
+              </h3>
+              <p>
+                An app containing a database of SBU professors to help students
+                and faculty connect on research opportunities. Released to the
+                public.
+              </p>
+            </article>
+          </div>
+          <div class="col-4 col-6-medium col-12-small">
+            <article class="box style2">
+              <a
+                href="https://devpost.com/software/flexy-and-i-know-it"
+                target="_blank"
+                class="image featured"
+                ><img src="images/flexy.PNG" alt="Sean Erfan Flexy HackHarvard"
+              /></a>
+              <h3>
+                <a
+                  href="https://devpost.com/software/flexy-and-i-know-it"
+                  target="_blank"
+                  >Flexy (and I know it)</a
+                >
+              </h3>
+              <p>
+                An app that helps people recover from injuries by providing
+                exercises and verifying correct performance. Winner of
+                HackHarvard's Best Healthcare Prize.
+              </p>
+            </article>
+          </div>
+          <div class="col-4 col-6-medium col-12-small">
+            <article class="box style2">
+              <a
+                href="https://github.com/Shameed4/StackOverflowClone"
+                target="_blank"
+                class="image featured"
+                ><img
+                  src="images/fake_so.PNG"
+                  alt="Sean Erfan Stack Overflow Clone"
+              /></a>
+              <h3>
+                <a
+                  href="https://github.com/Shameed4/StackOverflowClone"
+                  target="_blank"
+                  >Stack Overflow Clone</a
+                >
+              </h3>
+              <p>
+                Full-stack CRUD app with user authentication, allowing users to
+                post questions, answers, and comments. Built with the MERN stack
+                and bcrypt for security.
+              </p>
+            </article>
+          </div>
+          <div class="col-4 col-6-medium col-12-small">
+            <article class="box style2">
+              <a
+                href="https://devpost.com/software/hocus-potus"
+                target="_blank"
+                class="image featured"
+                ><img
+                  src="images/hocuspotus.PNG"
+                  alt="Sean Erfan Hackathon Hocus Potus"
+              /></a>
+              <h3>
+                <a
+                  href="https://devpost.com/software/hocus-potus"
+                  target="_blank"
+                  >Hocus Potus</a
+                >
+              </h3>
+              <p>
+                A prize-winning SBUHacks 2024 project that gamifies learning
+                about four U.S. presidential candidates. I worked on the
+                front-end JavaScript and back-end routes.
+              </p>
+            </article>
+          </div>
+          <div class="col-4 col-6-medium col-12-small">
+            <article class="box style2">
+              <a
+                href="https://github.com/Shameed4/ReinforcementLearning"
+                target="_blank"
+                class="image featured"
+                ><img
+                  src="https://miro.medium.com/v2/resize:fit:854/1*qgTt-GvbDtEugkmTk5z0zg.png"
+                  alt="Sean Erfan TicTacToe Reinforcement Learning Tensorflow"
+              /></a>
+              <h3>
+                <a href="https://github.com/Shameed4/ReinforcementLearning"
+                  >Reinforcement Learning</a
+                >
+              </h3>
+              <p>
+                Training an agent to play 2D and 3D TicTacToe using the
+                Q-Learning algorithm.
+              </p>
+            </article>
+          </div>
+          <div class="col-4 col-6-medium col-12-small">
+            <article class="box style2">
+              <a href="#" target="_blank" class="image featured"
+                ><img
+                  src="images/seawolf_search.PNG"
+                  alt="Sean Erfan AI Seawolf Search Lost and Found Hackathon "
+              /></a>
+              <h3>
+                <a
+                  href="https://devpost.com/software/seawolf-searcher"
+                  target="_blank"
+                  >Seawolf Search</a
+                >
+              </h3>
+              <p>
+                An AI-powered lost and found, allowing users to upload and
+                locate missing items. Another prize-winning hackathon project.
+              </p>
+            </article>
+          </div>
+          <div class="col-4 col-6-medium col-12-small">
+            <article class="box style2">
+              <a
+                href="https://docs.google.com/document/d/1cRCcnCFzpug8pqRj1NeS2_saeKAA68ucD0Ytu20NvJA/edit?usp=drive_link"
+                target="_blank"
+                class="image featured"
+                ><img src="images/openai.PNG" alt="OpenAI API Tutorial"
+              /></a>
+              <h3>
+                <a
+                  href="https://docs.google.com/document/d/1cRCcnCFzpug8pqRj1NeS2_saeKAA68ucD0Ytu20NvJA/edit?usp=drive_link"
+                  target="_blank"
+                  >OpenAI API Tutorial</a
+                >
+              </h3>
+              <p>
+                Created a list of instructions to teach people how to use the
+                OpenAI API!
+              </p>
+            </article>
+          </div>
+        </div>
+        <footer>
+          <!-- <p>Lorem ipsum dolor sit sapien vestibulum ipsum primis?</p> -->
+          <a href="#contact" class="button large scrolly"
+            >Get in touch with me</a
+          >
+        </footer>
+      </div>
+    </article>
 
-			<!-- SBU - full row -->
-			<div class="row aln-center" style="margin-top: 1em;">
-				<div class="col-12">
-					<h3 style="text-align:center; margin-bottom: 0.5em;">Student at Stony Brook University</h3>
-				</div>
-				<div class="col-4 col-6-medium col-12-small">
-					<section class="box style1">
-						<span class="icon solid featured fa-graduation-cap"></span>
-						<h3>Academics</h3>
-						<p>Graduated with a double major in Computer Science and Applied Mathematics & Statistics in 3
-							years with a GPA of 3.96. Member of the University Scholars honors program.</p>
-					</section>
-				</div>
-				<div class="col-4 col-6-medium col-12-small">
-					<section class="box style1">
-						<span class="icon solid featured fa-robot"></span>
-						<h3>Co-Founder, AI Community @ SBU</h3>
-						<p>Co-founded Stony Brook's AI club, serving as VP for 1 year and President for 2.
-							Led an e-board of 10, hosted ML workshops and competitions, organized guest speaker events,
-							and grew the club to official <a
-								href="https://www.stonybrook.edu/commcms/ceas-undergrad/student_organization/ai_community"
-								target="_blank">CEAS recognition</a> with a datathon of 50+ competitors.</p>
-					</section>
-				</div>
-				<div class="col-4 col-6-medium col-12-small">
-					<section class="box style1">
-						<span class="icon solid featured fa-trophy"></span>
-						<h3>Hackathons & Research</h3>
-						<p>Won prizes at four hackathons: Hopperhacks 2024 (AI Track), SBUHacks 2024 (Best MongoDB Atlas),
-							HackHarvard 2024 (AllHealth Track), and NAI Company Hackathon (Honorable Mention).
-							Also served as a Data Structures TA and NLP research assistant, studying contradiction
-							detection and sentiment analysis on Russia-Ukraine war coverage.</p>
-					</section>
-				</div>
-			</div>
-			<footer>
-				<!-- <p>Lorem ipsum dolor sit sapien vestibulum ipsum primis?</p> -->
-				<a href="#portfolio" class="button large scrolly">See some of my projects!</a>
-			</footer>
-		</div>
-	</article>
-
-	<!-- Portfolio -->
-	<article id="portfolio" class="wrapper style3">
-		<div class="container">
-			<header>
-				<h2>Here's some stuff I made recently. Click the pictures to see more!</h2>
-				<!-- <p>Proin odio consequat  sapien vestibulum consequat lorem dolore feugiat.</p> -->
-			</header>
-			<div class="row">
-				<div class="col-4 col-6-medium col-12-small">
-					<article class="box style2">
-						<a href="https://www.nexussbu.com/" target="_blank" class="image featured"><img
-								src="images/nexus.PNG" alt="Sean Erfan Nexus Research" /></a>
-						<h3><a href="https://www.nexussbu.com/" target="_blank">Nexus</a></h3>
-						<p>An app containing a database of SBU professors to help students and faculty connect on
-							research opportunities. Released to the public.</p>
-					</article>
-				</div>
-				<div class="col-4 col-6-medium col-12-small">
-					<article class="box style2">
-						<a href="https://devpost.com/software/flexy-and-i-know-it" target="_blank"
-							class="image featured"><img src="images/flexy.PNG" alt="Sean Erfan Flexy HackHarvard" /></a>
-						<h3><a href="https://devpost.com/software/flexy-and-i-know-it" target="_blank">Flexy (and I know
-								it)</a></h3>
-						<p>An app that helps people recover from injuries by providing exercises and verifying correct
-							performance.
-							Winner of HackHarvard's Best Healthcare Prize.</p>
-					</article>
-				</div>
-				<div class="col-4 col-6-medium col-12-small">
-					<article class="box style2">
-						<a href="https://github.com/Shameed4/StackOverflowClone" target="_blank"
-							class="image featured"><img src="images/fake_so.PNG"
-								alt="Sean Erfan Stack Overflow Clone" /></a>
-						<h3><a href="https://github.com/Shameed4/StackOverflowClone" target="_blank">Stack Overflow
-								Clone</a></h3>
-						<p>Full-stack CRUD app with user authentication, allowing users to post questions, answers, and
-							comments. Built with the MERN stack and bcrypt for security.</p>
-					</article>
-				</div>
-				<div class="col-4 col-6-medium col-12-small">
-					<article class="box style2">
-						<a href="https://devpost.com/software/hocus-potus" target="_blank" class="image featured"><img
-								src="images/hocuspotus.PNG" alt="Sean Erfan Hackathon Hocus Potus" /></a>
-						<h3><a href="https://devpost.com/software/hocus-potus" target="_blank">Hocus Potus</a></h3>
-						<p>A prize-winning SBUHacks 2024 project that gamifies learning about four U.S. presidential
-							candidates.
-							I worked on the front-end JavaScript and back-end routes.</p>
-					</article>
-				</div>
-				<div class="col-4 col-6-medium col-12-small">
-					<article class="box style2">
-						<a href="https://github.com/Shameed4/ReinforcementLearning" target="_blank"
-							class="image featured"><img
-								src="https://miro.medium.com/v2/resize:fit:854/1*qgTt-GvbDtEugkmTk5z0zg.png"
-								alt="Sean Erfan TicTacToe Reinforcement Learning Tensorflow" /></a>
-						<h3><a href="https://github.com/Shameed4/ReinforcementLearning">Reinforcement Learning</a></h3>
-						<p>Training an agent to play 2D and 3D TicTacToe using the Q-Learning algorithm.</p>
-					</article>
-				</div>
-				<div class="col-4 col-6-medium col-12-small">
-					<article class="box style2">
-						<a href="#" target="_blank" class="image featured"><img src="images/seawolf_search.PNG"
-								alt="Sean Erfan AI Seawolf Search Lost and Found Hackathon " /></a>
-						<h3><a href="https://devpost.com/software/seawolf-searcher" target="_blank">Seawolf Search</a>
-						</h3>
-						<p>An AI-powered lost and found, allowing users to upload and locate missing items.
-							Another prize-winning hackathon project.</p>
-					</article>
-				</div>
-				<div class="col-4 col-6-medium col-12-small">
-					<article class="box style2">
-						<a href="https://docs.google.com/document/d/1cRCcnCFzpug8pqRj1NeS2_saeKAA68ucD0Ytu20NvJA/edit?usp=drive_link"
-							target="_blank" class="image featured"><img src="images/openai.PNG"
-								alt="OpenAI API Tutorial" /></a>
-						<h3><a href="https://docs.google.com/document/d/1cRCcnCFzpug8pqRj1NeS2_saeKAA68ucD0Ytu20NvJA/edit?usp=drive_link"
-								target="_blank">OpenAI API Tutorial</a></h3>
-						<p>Created a list of instructions to teach people how to use the OpenAI API!</p>
-					</article>
-				</div>
-			</div>
-			<footer>
-				<!-- <p>Lorem ipsum dolor sit sapien vestibulum ipsum primis?</p> -->
-				<a href="#contact" class="button large scrolly">Get in touch with me</a>
-			</footer>
-		</div>
-	</article>
-
-	<!-- Contact -->
-	<article id="contact" class="wrapper style4">
-		<div class="container medium">
-			<header>
-				<h2>Send me a message!</h2>
-				<!-- <p>Ornare nulla proin odio consequat sapien vestibulum ipsum.</p> -->
-			</header>
-			<div class="row">
-				<div class="col-12">
-					<!-- 
+    <!-- Contact -->
+    <article id="contact" class="wrapper style4">
+      <div class="container medium">
+        <header>
+          <h2>Send me a message!</h2>
+          <!-- <p>Ornare nulla proin odio consequat sapien vestibulum ipsum.</p> -->
+        </header>
+        <div class="row">
+          <div class="col-12">
+            <!-- 
     FormSpree configuration for contact form
 -->
-					<form id="contactForm" action="https://formspree.io/f/movevljo" method="POST">
-						<div class="row">
-							<div class="col-6 col-12-small">
-								<input type="text" name="name" id="name" placeholder="Name" />
-							</div>
-							<div class="col-6 col-12-small">
-								<input type="email" name="_replyto" id="email" placeholder="Email" />
-							</div>
-							<div class="col-12">
-								<input type="text" name="subject" id="subject" placeholder="Subject" />
-							</div>
-							<div class="col-12">
-								<textarea name="message" id="message" placeholder="Message"></textarea>
-							</div>
-							<!-- Hidden fields for FormSpree configuration -->
-							<input type="hidden" name="_subject" value="New message from your website">
-							<input type="hidden" name="_next" value="https://shameed4.github.io/#thankyou">
-							<input type="hidden" name="_format" value="plain">
-							<div class="col-12">
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
-									<li><input type="reset" value="Clear Form" class="alt" /></li>
-								</ul>
-							</div>
-						</div>
-					</form>
-				</div>
-				<div class="col-12">
-					<hr />
-					<h3>Find me on ...</h3>
-					<ul class="social">
-						<li><a href="https://www.linkedin.com/in/seanerfan/" target="_blank"
-								class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-						<li><a href="https://github.com/Shameed4" target="_blank" class="icon brands fa-github"><span
-									class="label">Github</span></a></li>
-						<li><a href="https://www.kaggle.com/seanerfan" target="_blank"
-								class="icon brands fa-kaggle"><span class="label">Kaggle</span></a></li>
-						<!--
+            <form
+              id="contactForm"
+              action="https://formspree.io/f/movevljo"
+              method="POST"
+            >
+              <div class="row">
+                <div class="col-6 col-12-small">
+                  <input type="text" name="name" id="name" placeholder="Name" />
+                </div>
+                <div class="col-6 col-12-small">
+                  <input
+                    type="email"
+                    name="_replyto"
+                    id="email"
+                    placeholder="Email"
+                  />
+                </div>
+                <div class="col-12">
+                  <input
+                    type="text"
+                    name="subject"
+                    id="subject"
+                    placeholder="Subject"
+                  />
+                </div>
+                <div class="col-12">
+                  <textarea
+                    name="message"
+                    id="message"
+                    placeholder="Message"
+                  ></textarea>
+                </div>
+                <!-- Hidden fields for FormSpree configuration -->
+                <input
+                  type="hidden"
+                  name="_subject"
+                  value="New message from your website"
+                />
+                <input
+                  type="hidden"
+                  name="_next"
+                  value="https://shameed4.github.io/#thankyou"
+                />
+                <input type="hidden" name="_format" value="plain" />
+                <div class="col-12">
+                  <ul class="actions">
+                    <li><input type="submit" value="Send Message" /></li>
+                    <li>
+                      <input type="reset" value="Clear Form" class="alt" />
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="col-12">
+            <hr />
+            <h3>Find me on ...</h3>
+            <ul class="social">
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/seanerfan/"
+                  target="_blank"
+                  class="icon brands fa-linkedin-in"
+                  ><span class="label">LinkedIn</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://github.com/Shameed4"
+                  target="_blank"
+                  class="icon brands fa-github"
+                  ><span class="label">Github</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.kaggle.com/seanerfan"
+                  target="_blank"
+                  class="icon brands fa-kaggle"
+                  ><span class="label">Kaggle</span></a
+                >
+              </li>
+              <!--
 								<li><a href="#" class="icon solid fa-rss"><span>RSS</span></a></li>
 								<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
 								<li><a href="#" class="icon brands fa-tumblr"><span class="label">Tumblr</span></a></li>
@@ -305,35 +492,43 @@
 								<li><a href="#" class="icon brands fa-flickr"><span>Flickr</span></a></li>
 								<li><a href="#" class="icon brands fa-vimeo"><span>Vimeo</span></a></li>
 								-->
-					</ul>
-					<hr />
-				</div>
-			</div>
-			<div id="thankyou"
-				style="display: none; text-align: center; padding: 2em; margin: 2em 0; background-color: #f0f8ff; border-radius: 10px; border: 1px solid #d0e0f0;">
-				<div class="thankyou-message">
-					<h3 style="color: #2c7adf;">Thank you for your message!</h3>
-					<p>I'll get back to you as soon as possible.</p>
-				</div>
-			</div>
-			<footer>
-				<ul id="copyright">
-					<li>&copy; Untitled. All rights reserved.</li>
-					<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-				</ul>
-			</footer>
-		</div>
-	</article>
+            </ul>
+            <hr />
+          </div>
+        </div>
+        <div
+          id="thankyou"
+          style="
+            display: none;
+            text-align: center;
+            padding: 2em;
+            margin: 2em 0;
+            background-color: #f0f8ff;
+            border-radius: 10px;
+            border: 1px solid #d0e0f0;
+          "
+        >
+          <div class="thankyou-message">
+            <h3 style="color: #2c7adf">Thank you for your message!</h3>
+            <p>I'll get back to you as soon as possible.</p>
+          </div>
+        </div>
+        <footer>
+          <ul id="copyright">
+            <li>&copy; Untitled. All rights reserved.</li>
+            <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+          </ul>
+        </footer>
+      </div>
+    </article>
 
-	<!-- Scripts -->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/jquery.scrolly.min.js"></script>
-	<script src="assets/js/browser.min.js"></script>
-	<script src="assets/js/breakpoints.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<script src="assets/js/main.js"></script>
-	<script src="assets/js/contact.js"></script>
-
-</body>
-
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/contact.js"></script>
+  </body>
 </html>
