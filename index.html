@@ -37,7 +37,8 @@
 						<h1>Hi. I'm <strong><u><a href="/SeanErfanResume.pdf" target="_blank">Sean
 										Erfan</a></u></strong>.</h1>
 					</header>
-					<p>I am working as a Full Stack Software Engineer at North Atlantic Industries.
+					<p>I am working as a Software Developer at Lotus MD.
+						Previously, I was a Full Stack Software Engineer at North Atlantic Industries.
 						I recently graduated from Stony Brook University with a double major in Computer Science and
 						Applied Mathematics & Statistics.
 						I co-founded the <a href="https://ai-community-sbu.github.io/AI-SBU/pages/EBoard"
@@ -45,8 +46,7 @@
 						I won prizes in 4 hackathons, most recently my company's internal hackathon and HackHarvard
 						2024.
 						Some of my previous involvements included being the Secretary of the <a href="https://sbcs.io"
-							target="_blank">Stony Brook Computing Society</a>.
-						I am seeking full-time Software Engineering opportunities in New York.</p>
+							target="_blank">Stony Brook Computing Society</a>.</p>
 					<a href="#work" class="button large scrolly">Learn about what I do</a>
 				</div>
 			</div>
@@ -59,78 +59,90 @@
 			<header>
 				<h2>Here's some of the stuff I have done.</h2>
 			</header>
+			<!-- Lotus MD -->
 			<div class="row aln-center">
 				<div class="col-4 col-6-medium col-12-small">
 					<section class="box style1">
-						<span class="icon solid featured fa-laptop-code"></span>
-						<h3>Software Engineer @ NAI</h3>
-						<p>I have been working at North Atlantic Industries since May where I have been building
-							full-stack apps. My main project is an Android app that involves wave-picking, or fulfilling
-							multiple warehouse orders at the same time to reduce repeat trips. It is currently
-							being used in the warehouse to fulfill 30+ orders per week. Another app I built won
-							honorable mention at my company's internal hackathon, which has been deployed and is used to
-							plan which kits can be processed in advance. The main tools I have used were Java, Angular,
-							ASP.NET,
-							AWS, Terraform, and Docker.
-						</p>
+						<span class="icon solid featured fa-stethoscope"></span>
+						<h3>Software Developer @ Lotus MD</h3>
+						<p>I recently joined Lotus MD as a Software Developer, bringing my full-stack and cloud experience to the healthcare space.</p>
 					</section>
+				</div>
+			</div>
+
+			<!-- NAI - full row -->
+			<div class="row aln-center" style="margin-top: 1em;">
+				<div class="col-12">
+					<h3 style="text-align:center; margin-bottom: 0.5em;">Software Engineer @ North Atlantic Industries</h3>
 				</div>
 				<div class="col-4 col-6-medium col-12-small">
 					<section class="box style1">
-						<span class="icon solid featured fa-graduation-cap"></span>
-						<h3>Student at Stony Brook University</h3>
-						<p>I graduated with a double major in Computer Science and Applied Mathematics & Statistics in 3
-							years with a GPA of 3.96! I was in the University Scholars honors program and was the
-							President of the AI Community, Secretary of the Stony Brook Computing Society, a data
-							structures teaching assistant, and a natural language processing research assistant.
-						</p>
-					</section>
-				</div>
-				<div class="col-4 col-6-medium col-12-small">
-					<section class="box style1">
-						<span class="icon solid featured fa-robot"></span>
-						<h3>Co-Founder of AI Community @ SBU</h3>
-						<p>I co-founded Stony Brook's AI club in my freshman year, where I was VP for 1 year and
-							President for 2 years.
-							I led an e-board of 10 people, hosted machine learning workshops and competitions, organized
-							guest speaker events, and helped establish our presence within the University.
-							My proudest accomplishments include hosting our datathon with 50+ competitors and gaining
-							official recognition as a <a
-								href="https://www.stonybrook.edu/commcms/ceas-undergrad/student_organization/ai_community"
-								target="_blank">CEAS
-								organization</a>.</p>
+						<span class="icon solid featured fa-warehouse"></span>
+						<h3>Wave Picking App</h3>
+						<p>A native Android app (Java, MVVM, Zebra DataWedge) used daily by warehouse workers to fulfill
+							20+ production orders simultaneously. Features an offline-first sync architecture with a local
+							queue to cache failed requests and reconcile inventory on reconnection — zero data loss during
+							network instability. Backed by an ASP.NET Core/SQL Server API using Serializable transaction
+							isolation to eliminate race conditions and automatic session forking to preserve user progress
+							during concurrent picks.</p>
 					</section>
 				</div>
 				<div class="col-4 col-6-medium col-12-small">
 					<section class="box style1">
 						<span class="icon solid featured fa-trophy"></span>
-						<h3>Hackathons</h3>
-						<p>I participated in several hackathons, earning prizes at four of them:</p>
-						<ul>
-							<li>Hopperhacks 2024 - AI Track Winner</li>
-							<li>SBUHacks 2024 - Best use of MongoDB Atlas</li>
-							<li>HackHarvard 2024 - AllHealth Track Winner</li>
-							<li>NAI Company Hackathon - Honorable Mention</li>
-						</ul>
+						<h3>Kit Management Dashboard</h3>
+						<p>A full-stack Angular/ASP.NET production planning dashboard that won honorable mention at the
+							company hackathon and was extended to production, saving 6 hours weekly across the operations
+							team. Backed by a complex SQL view aggregating real-time BOM shortages, purchase orders, and
+							batch schedules to calculate build feasibility across thousands of components.</p>
 					</section>
 				</div>
 				<div class="col-4 col-6-medium col-12-small">
 					<section class="box style1">
-						<span class="icon solid featured fa-chalkboard-teacher"></span>
-						<h3>Data Structures Teaching Assistant</h3>
-						<p>I hosted a 1-hour recitation every week to go over review problems, and 3 hours of office
-							hours to answer questions about course content and debug homeworks. During finals week, I
-							held a review session with over 60 students to explain previous exam questions and answer
-							student questions.</p>
+						<span class="icon solid featured fa-cloud"></span>
+						<h3>AI, ETL & Cloud Systems</h3>
+						<p>Built an AI-powered DVT generation service (Python FastAPI + Gemini Pro) that ingests PDF
+							specs and produces formatted DOCX reports, deployed on AWS ECS/Fargate with CI/CD via Jenkins.
+							Orchestrated a fault-tolerant ETL pipeline syncing RoHS/REACH compliance data for 15,000+
+							components. Designed a certification management system for 75 employees using AWS S3
+							pre-signed URLs with automated email reminders, and provisioned ephemeral dev environments
+							via Terraform and CloudFront.</p>
+					</section>
+				</div>
+			</div>
+
+			<!-- SBU - full row -->
+			<div class="row aln-center" style="margin-top: 1em;">
+				<div class="col-12">
+					<h3 style="text-align:center; margin-bottom: 0.5em;">Student at Stony Brook University</h3>
+				</div>
+				<div class="col-4 col-6-medium col-12-small">
+					<section class="box style1">
+						<span class="icon solid featured fa-graduation-cap"></span>
+						<h3>Academics</h3>
+						<p>Graduated with a double major in Computer Science and Applied Mathematics & Statistics in 3
+							years with a GPA of 3.96. Member of the University Scholars honors program.</p>
 					</section>
 				</div>
 				<div class="col-4 col-6-medium col-12-small">
 					<section class="box style1">
-						<span class="icon solid featured fa-microscope"></span>
-						<h3>Research Assistant in NLP</h3>
-						<p>My team and I have gathered articles on the Russia-Ukraine war to gather varying perspectives
-							about the conflict and find different NLP tasks that we can perform, including contradiction
-							detection, sentiment analysis, and attributing quotes to a specific person.</p>
+						<span class="icon solid featured fa-robot"></span>
+						<h3>Co-Founder, AI Community @ SBU</h3>
+						<p>Co-founded Stony Brook's AI club, serving as VP for 1 year and President for 2.
+							Led an e-board of 10, hosted ML workshops and competitions, organized guest speaker events,
+							and grew the club to official <a
+								href="https://www.stonybrook.edu/commcms/ceas-undergrad/student_organization/ai_community"
+								target="_blank">CEAS recognition</a> with a datathon of 50+ competitors.</p>
+					</section>
+				</div>
+				<div class="col-4 col-6-medium col-12-small">
+					<section class="box style1">
+						<span class="icon solid featured fa-trophy"></span>
+						<h3>Hackathons & Research</h3>
+						<p>Won prizes at four hackathons: Hopperhacks 2024 (AI Track), SBUHacks 2024 (Best MongoDB Atlas),
+							HackHarvard 2024 (AllHealth Track), and NAI Company Hackathon (Honorable Mention).
+							Also served as a Data Structures TA and NLP research assistant, studying contradiction
+							detection and sentiment analysis on Russia-Ukraine war coverage.</p>
 					</section>
 				</div>
 			</div>
